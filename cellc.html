@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="style.css">
+            <title>Cell C</title>
+      </head>
+
+      <body>
+            <div id="header">
+                  <h1>Pine City Mall</h1>
+            </div>
+            <div id="tabs-top">
+                  <a href="index.html">HOME</a>
+                  <a href="about.html">ABOUT</a>
+                  <a href="map.html">MALL MAP</a>
+                  <a href="storedirectory.html">STORES</a>
+                  <a href="movies.html">MOVIES</a>
+            </div>
+            <div id="main">
+                  <div id="content">
+                        <div id="info-box-full">
+                        <div class="slideshow-container">
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/cellc1.png" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/cellc2.png" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/cellc3.png" height="600" width="10">
+                              </div>
+
+                              <div class="mySlides fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/Cellc4.jpg" height="600" width="10">
+                                  </div>
+                              
+                              </div>
+                              <br>
+                              <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                              
+                              <script>
+                              var slideIndex = 0;
+                              showSlides();
+                              
+                              function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                              }
+                              </script>
+                              <br> <br> <br>
+                              <h2>CELL C</h2>
+    <p>Cell C launched its operations in 2001, seven years after the launch of the two incumbents, vodacom and mtn (launched in 1994). 
+      A fourth mobile operator, telkom mobile, a business unit of Telkom Soc SA ltd, launched its operations in 2010.
+      In spite of penetration of over 140% of mobile services in South Africa, growth - particularly in the prepaid market - continues apace.</p>
+      <p>Cell C itself grew its mobile subscribers from 9 million in 2012, to over 20 million by july 2015.
+      The momentum and success of Cell C's pricing strategy over the past two years with its core 
+      consumer values of honesty, simplicity and transparency, has resulted in a positive customer response.</p>   
+      
+      <strong><p>TRADING HOURS</p></strong>
+      <ul>
+            <li>Monday - Saturday: 09h00 - 20h00</li>
+            <li>Sunday & Public Holidays: 10h00 - 20h00</li>
+      </ul>
+    <strong><p>Shop Number: 1153 Lower Level</p></strong>
+    <strong><p>Telephone: 084 042 5274</p></strong>
+     </div>
+          </div>
+            </div>
+     <div id="tabs-bottom">
+      <a href="electronics.html">Back</a>
+                   <a href="contact.html">CONTACT US</a>
+                   <a href="feedback.html">FEEDBACK</a>
+            </div>
+      </body>
+</html>

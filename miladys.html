@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="style.css">
+            <title>Mildays</title>
+      </head>
+
+      <body>
+            <div id="header">
+                  <h1>Pine City Mall</h1>
+            </div>
+            <div id="tabs-top">
+                  <a href="index.html">HOME</a>
+                  <a href="about.html">ABOUT</a>
+                  <a href="map.html">MALL MAP</a>
+                  <a href="storedirectory.html">STORES</a>
+                  <a href="movies.html">MOVIES</a>
+            </div>
+            <div id="main">
+                  <div id="content">
+                        <div id="info-box-full">
+                        <div class="slideshow-container">
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/miladys1.png" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/miladys2.png" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/miladys3.png" height="600" width="10">
+                              </div>
+
+                              <div class="mySlides fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/miladys4.png" height="600" width="10">
+                                  </div>
+                              
+                              </div>
+                              <br>
+                              <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                              
+                              <script>
+                              var slideIndex = 0;
+                              showSlides();
+                              
+                              function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                              }
+                              </script>
+                              <br> <br> <br>
+                              <h2>MILDAYS</h2>
+    <p>We believe every great success story starts with a woman. Well, ours started with two. In 1947, Mrs Bailey and Mrs Elison opened a dress shop in Pinetown. And so Miladys was born.
+      At Miladys, we think women are fabulous.</p> <p>We think you deserve to look your best – and feel great while doing it. We walk the line between fashion and comfort. 
+      We believe a good day starts with a good outfit. We are passionate about beautiful, well-made dresses (and denims and tops and skirts). 
+      We know there’s more than one way to wear an outfit – and we love clothes you can wear again and again. We also know that sometimes all you need is a good tee – and we’ve got those too. 
+      We think clothes should work for your shape, not against it. 
+      What we’re really trying to say is, we get women.</p>>
+
+      <strong><p>TRADING HOURS</p></strong>
+      <ul>
+            <li>Monday - Saturday: 09h00 - 20h00</li>
+            <li>Sunday & Public Holidays: 10h00 - 20h00</li>
+      </ul>
+    <strong><p>Shop Number</p></strong>
+    <p>2014 Upper Level</p>
+    <strong><p>Telephone</p></strong>
+    <p>(011) 334 5118</p>
+     </div>
+          </div>
+            </div>
+     <div id="tabs-bottom">
+      <a href="clothing.html">Back</a>
+                   <a href="contact.html">CONTACT US</a>
+                   <a href="feedback.html">FEEDBACK</a>
+            </div>
+      </body>
+</html>

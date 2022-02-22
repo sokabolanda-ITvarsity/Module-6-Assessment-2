@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="style.css">
+            <title>Pick n Pay </title>
+      </head>
+
+      <body>
+            <div id="header">
+                  <h1>Pine City Mall</h1>
+            </div>
+            <div id="tabs-top">
+                  <a href="index.html">HOME</a>
+                  <a href="about.html">ABOUT</a>
+                  <a href="map.html">MALL MAP</a>
+                  <a href="storedirectory.html">STORES</a>
+                  <a href="movies.html">MOVIES</a>
+            </div>
+            <div id="main">
+                  <div id="content">
+                        <div id="info-box-full">
+                        <div class="slideshow-container">
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/picknpay1.jpg" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/picknpay2.png" height="600" width="10">
+                                
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/picknpay3.jpg" height="600" width="10">
+                              </div>
+
+                              <div class="mySlides fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/picknpay4.jpg" height="600" width="10">
+                                  </div>
+                              
+                              </div>
+                              <br>
+                              <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                              
+                              <script>
+                              var slideIndex = 0;
+                              showSlides();
+                              
+                              function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                              }
+                              </script>
+                              <br> <br> <br>
+                              <h2>PICK N PAY</h2>
+    <p>Pick n Pay is the quintessential family store focused on the customer. 
+      Since 1967 when consumer champion Raymond Ackerman purchased the first few stores, the Ackerman family’s vision has grown and expanded to now encompass stores in South Africa, Namibia, Botswana, Zambia, Mozambique, Mauritius, Swaziland and Lesotho. 
+      Additionally Pick n Pay owns a 49% share of a Zimbabwean supermarket business, TM Supermarkets. 
+      Our offer to customers focuses on groceries, clothing and general merchandise, but also includes additional value-added services to cater for our customers’ expectations and evolving needs. 
+      To ensure a convenient and accessible shopping experience the Group operates across multiple store formats, both franchised and owned.</p>
+
+      <strong><p>TRADING HOURS</p></strong>
+      <ul>
+            <li>Monday - Saturday: 09h00 - 20h00</li>
+            <li>Sunday & Public Holidays: 10h00 - 20h00</li>
+      </ul>
+    <strong><p>Shop Number</p></strong>
+    <p>1088 Lower Level</p>
+    <strong><p>Telephone</p></strong>
+    <p>(011) 778 5988</p>
+     </div>
+          </div>
+            </div>
+     <div id="tabs-bottom">
+      <a href="supermarkets.html">Back</a>
+                   <a href="contact.html">CONTACT US</a>
+                   <a href="feedback.html">FEEDBACK</a>
+            </div>
+      </body>
+</html>
